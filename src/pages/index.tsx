@@ -13,11 +13,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <header className={styles.navbarContainer}>
+      <header className={styles.navbarContainer}>
           <Image width={110} src={logo} alt="logo" />
           <button className={styles.navbarButton}>Contact</button>
         </header>
+      <main className={styles.main}>
         <div className={styles.heroContent}>
           <section className={styles.leftContainer}>
             <h1>
@@ -28,7 +28,7 @@ export default function Home() {
             <button className={styles.heroButton}>Get In Touch</button>
           </section>
           <section className={styles.rightContainer}>
-          <Image height={450} src={heroImage} alt="heroImage"/>
+          <Image className={styles.heroImage} src={heroImage} alt="heroImage"/>
           </section>
         </div>
       </main>

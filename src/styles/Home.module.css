@@ -1,8 +1,9 @@
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  min-height: 100vh;
   background-color: #bde8c6;
 }
 
@@ -30,6 +31,7 @@
   padding: 0 2rem 0 2rem;
   background-color: #bde8c6;
   width: 100%;
+  position: fixed;
 }
 
 .heroContent {
@@ -38,33 +40,32 @@
   flex-wrap: wrap;
   align-items: center;
   width: 70vw;
-  padding-top: 2rem;
 }
 
 .leftContainer {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  flex: 0.5;
+  width: 50%;
   gap: 1rem;
 }
 
 .leftContainer > h1 {
   font-size: 2.8rem;
-  font-weight: 600;
+  font-weight: 900;
+  z-index: 2;
 }
 
 .leftContainer > p {
-  
   font-size: 1.3rem;
   font-weight: 500;
 }
 
 .rightContainer {
   display: flex;
-  flex: 0.5;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  width: 50%;
 }
 
 .heroButton {
@@ -84,11 +85,25 @@
   transition: 300ms ease-in-out;
 }
 
-@media(max-width:864px){
-  .heroContent{
+.heroImage {
+  object-fit: contain;
+  height: 40%;
+  z-index: 1;
+}
+
+@media (max-width: 864px) {
+  .heroContent {
     gap: 2rem;
   }
-  .leftContainer{
+  .leftContainer {
     align-items: center;
+    order: 1;
+  }
+  .rightContainer {
+    order: 0;
+    width: 100%;
+  }
+  .heroImage {
+    height: 20rem;
   }
 }
