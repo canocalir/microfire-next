@@ -16,6 +16,7 @@
   height: 2.5rem;
   font-size: 1rem;
   border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .navbarButton:hover {
@@ -29,9 +30,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem 0 2rem;
-  background-color: #bde8c6;
-  width: 100%;
+  background-color: #bde8c6d2;
   position: fixed;
+  z-index: 3;
+  width: 100%;
 }
 
 .heroContent {
@@ -40,20 +42,22 @@
   flex-wrap: wrap;
   align-items: center;
   width: 70vw;
+  padding-top: 5rem;
 }
 
 .leftContainer {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  width: 50%;
+  width: 49%;
   gap: 1rem;
+  z-index: 2;
 }
 
 .leftContainer > h1 {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
   font-weight: 900;
-  z-index: 2;
+  color: #b75742;
 }
 
 .leftContainer > p {
@@ -65,45 +69,259 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 49%;
 }
 
 .heroButton {
-  background-color: #222222;
+  background-color: #b75742;
   color: #ffffff;
   font-weight: 600;
   border-radius: 2rem;
   width: 15rem;
   height: 4rem;
   font-size: 1.5rem;
-  border: none;
+  border: 4px solid #b75742;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .heroButton:hover {
-  background-color: #5e5e5e;
+  background-color: #88321f;
   cursor: pointer;
   transition: 300ms ease-in-out;
 }
 
 .heroImage {
   object-fit: contain;
-  height: 40%;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+.waves {
+  position: sticky;
+  margin-top: -20rem;
+}
+
+.usageWaves {
+  position: absolute;
+}
+
+.usageWavesBottom{
+  width: 100%;
+}
+
+.midContent {
+  margin-top: 0rem;
   z-index: 1;
+  height: 20rem;
+  width: 100%;
+  background-color: #fbb02d !important;
+  background: url(../assets/fireraiders.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.specifications {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 4rem 0 3rem 0;
+}
+
+.specificationsLeft {
+  flex: 0.3;
+}
+
+.specificationsLeft > h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.specificationsLeft > p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.specificationsRight {
+  flex: 0.3;
+}
+
+.headerWithIcon > h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+
+.specificationsRight > p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.headerWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  color: #b75742;
+}
+
+.headerIcon {
+  font-size: 2.7rem;
+}
+
+.usageSection {
+  background-color: #eeeeee;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.usageImage {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.usageLeft {
+  padding: 10rem 0 0rem 0;
+  width: 45%;
+}
+
+.usageRight {
+  padding: 15rem 0 0rem 0;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.usageRight > p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.usageRight > h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #b75742;
+}
+
+.videoSection{
+  width: 100%;
+  background-color: #fbb02d;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+
+.formSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 0 3rem 0;
+  gap: 1rem;
+}
+
+.formSection form{
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.formSection form input{
+  height: 2rem;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+}
+
+.formSection form input[type=submit]{
+  cursor: pointer;
+  background-color: #222222;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.formSection form input[type=submit]:hover{
+  background-color: #222222;
+}
+
+#contactHeading{
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+
+.footer{
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbb02d;
+  width: 100%;
 }
 
 @media (max-width: 864px) {
   .heroContent {
     gap: 2rem;
+    width: 90%;
   }
+
+  .formSection form{
+    flex-direction: column;
+  }
+
+  .usageLeft {
+    padding: 5rem 2rem 5rem 2rem;
+    width: 100%;
+  }
+
+  .usageRight {
+    padding: 0 2rem 5rem 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .waves {
+    position: sticky;
+    margin-top: 0;
+  }
+
+  .midContent {
+    height: 8rem;
+  }
+
   .leftContainer {
     align-items: center;
     order: 1;
+    width: 100%;
+    padding-top: 2rem;
   }
+
+  .leftContainer > h1 {
+    text-align: center;
+  }
+
+  .leftContainer > p {
+    text-align: center;
+  }
+
   .rightContainer {
     order: 0;
     width: 100%;
   }
   .heroImage {
     height: 20rem;
+  }
+
+  .specifications {
+    gap: 2rem;
   }
 }

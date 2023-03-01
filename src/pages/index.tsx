@@ -2,7 +2,10 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Image from "next/image";
 import logo from "../assets/logo.png";
-import heroImage from "../assets/mainpage.png"
+import heroImage from "../assets/mainpage.png";
+import usageImage from "../assets/usage.png";
+import { AiFillFire } from "react-icons/ai";
+import { FaThList } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -14,23 +17,112 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className={styles.navbarContainer}>
-          <Image width={110} src={logo} alt="logo" />
-          <button className={styles.navbarButton}>Contact</button>
-        </header>
+        <Image width={110} src={logo} alt="logo" />
+        <button className={styles.navbarButton}>Contact</button>
+      </header>
       <main className={styles.main}>
         <div className={styles.heroContent}>
           <section className={styles.leftContainer}>
-            <h1>
-              Yangın çıkmasını beklemeyin MicroFire Sticker ile hemen önleminizi
-              alın
-            </h1>
-            <p>Otomatik Yangın Söndürücü MicroFire; alevi algıladığında hemen aktive olarak yangını söndürür. Küçük boyutuna göre büyük iş başarır. Çevreye ve ekipmana zarar vermez.</p>
+            <h1>Yangın çıkmadan MicroFire ile hemen önleminizi alın</h1>
+            <p>
+              MicroFire Otomatik Yangın Söndürücü; alevi algıladığında hemen
+              aktive olarak yangını söndürür. Çevreye ve ekipmana zarar vermez.
+            </p>
             <button className={styles.heroButton}>Get In Touch</button>
           </section>
           <section className={styles.rightContainer}>
-          <Image className={styles.heroImage} src={heroImage} alt="heroImage"/>
+            <Image
+              priority
+              className={styles.heroImage}
+              src={heroImage}
+              alt="heroImage"
+            />
           </section>
         </div>
+        <svg
+          className={styles.waves}
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            fill="#fbb02d"
+            fillOpacity="1"
+            d="M0,160L34.3,154.7C68.6,149,137,139,206,117.3C274.3,96,343,64,411,74.7C480,85,549,139,617,181.3C685.7,224,754,256,823,256C891.4,256,960,224,1029,208C1097.1,192,1166,192,1234,202.7C1302.9,213,1371,235,1406,245.3L1440,256L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+          ></path>
+        </svg>
+        <div className={styles.midContent}></div>
+        <section className={styles.specifications}>
+          <div className={styles.specificationsLeft}>
+            <div className={styles.headerWithIcon}>
+              <AiFillFire className={styles.headerIcon} />
+              <h1>Microfire Sticker</h1>
+            </div>
+            <p>
+              Kolayca monte edilebilen, alevin teması ile kendiliğinden aktive
+              olan ve saniyeler içerisinde yangını söndürebilen otomatik bir
+              yangın söndürücüdür. Elektrik kaynağına, kablo ve boru
+              bağlantısına gerek duymaz.
+            </p>
+          </div>
+          <div className={styles.specificationsRight}>
+            <div className={styles.headerWithIcon}>
+              <FaThList className={styles.headerIcon} />
+              <h1>Fiziki Özellikleri</h1>
+            </div>
+            <p>
+              Küçük boyutludur (<b>100 x 50 x 4 mm</b>) Ağırlığı <b>26 ± 1</b>{" "}
+              gramdır <b>-30° +100° C</b> arasında saklanır Etkili söndürme
+              hacmi <b>0.1 m3</b> (<b>110 litre</b>) dür 1 sticker; yaklaşık{" "}
+              <b>50x50x50cm</b> boyutlarındaki bir kabin içinde çıkacak yangını
+              söndürebilir
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.usageSection}>
+          <svg
+            className={styles.usageWaves}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+          >
+            <path
+              fill="#bde8c6"
+              fillOpacity="1"
+              d="M0,128L60,106.7C120,85,240,43,360,26.7C480,11,600,21,720,53.3C840,85,960,139,1080,160C1200,181,1320,171,1380,165.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+            ></path>
+          </svg>
+          <div className={styles.usageLeft}>
+            <Image priority className={styles.usageImage} src={usageImage} alt="usage" />
+          </div>
+          <div className={styles.usageRight}>
+            <h1>Nasıl Monte Edilir?</h1>
+            <p>
+              Pürüzlü yüzeyi, olası yangın riskinin olduğu yöne bakacak şekilde,
+              arkasındaki yapışkan bandın koruyucusu sökülür ve yere paralel
+              şekilde yapıştırılır. Araçlarda, akü başlıkları ve yakıt
+              filtresinin üstüne gelecek şekilde kaportaya yapıştırılır.
+              Elektrik panolarında ve elektrik saatlerinde, panonun iç yüzeyinde
+              tavana gelecek şekilde yapıştırılır. Her bağımsız bölüme ayrı
+              sticker konmalıdır.
+            </p>
+          </div>
+          <svg className={styles.usageWavesBottom} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fbb02d" fillOpacity="1" d="M0,32L60,74.7C120,117,240,203,360,218.7C480,235,600,181,720,138.7C840,96,960,64,1080,48C1200,32,1320,32,1380,32L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        </section>
+        <section className={styles.videoSection}>
+          Video Section
+        </section>
+        <section className={styles.formSection}>
+        <h1 id={styles.contactHeading}>Contact</h1>
+          <form>
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="submit" value="Send Message" />
+          </form>
+        </section>
+        <footer className={styles.footer}>
+          Footer Section
+        </footer>
       </main>
     </>
   );
