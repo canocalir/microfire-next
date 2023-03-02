@@ -7,6 +7,16 @@
   background-color: #bde8c6;
 }
 
+#brand {
+  font-weight:600;
+  font-size:1.3rem;
+}
+
+#brand:hover{
+  background-color: #effbd0;
+  transition:500ms ease-in-out;
+}
+
 .navbarButton {
   background-color: #222222;
   color: #ffffff;
@@ -29,7 +39,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem 0 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   background-color: #bde8c6d2;
   position: fixed;
   z-index: 3;
@@ -55,13 +65,13 @@
 }
 
 .leftContainer > h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 900;
   color: #b75742;
 }
 
 .leftContainer > p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
@@ -140,7 +150,7 @@
 }
 
 .specificationsLeft > p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -149,12 +159,12 @@
 }
 
 .headerWithIcon > h1 {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 900;
 }
 
 .specificationsRight > p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -167,7 +177,7 @@
 }
 
 .headerIcon {
-  font-size: 2.7rem;
+  font-size: 2.2rem;
 }
 
 .usageSection {

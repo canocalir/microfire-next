@@ -17,16 +17,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className={styles.navbarContainer}>
-        <Image width={110} src={logo} alt="logo" />
+        <Image width={170} src={logo} alt="logo" />
         <button className={styles.navbarButton}>Contact</button>
       </header>
       <main className={styles.main}>
         <div className={styles.heroContent}>
           <section className={styles.leftContainer}>
-            <h1>Yangın çıkmadan MicroFire ile hemen önleminizi alın</h1>
+            <h1>Yangın çıkmasını beklemeyin önleminizi şimdi alın</h1>
             <p>
-              MicroFire Otomatik Yangın Söndürücü; alevi algıladığında hemen
-              aktive olarak yangını söndürür. Çevreye ve ekipmana zarar vermez.
+              <span id={styles.brand}>microfire</span> alevi algıladığında hemen aktive olarak yangını
+              söndüren "Otomatik bir Yangın Söndürücüdür". Çevreye ve ekipmana
+              zarar vermez.
             </p>
             <button className={styles.heroButton}>Get In Touch</button>
           </section>
@@ -58,10 +59,9 @@ export default function Home() {
               <h1>Microfire Sticker</h1>
             </div>
             <p>
-              Kolayca monte edilebilen, alevin teması ile kendiliğinden aktive
-              olan ve saniyeler içerisinde yangını söndürebilen otomatik bir
-              yangın söndürücüdür. Elektrik kaynağına, kablo ve boru
-              bağlantısına gerek duymaz.
+              Kolayca monte edilir, alevin teması ile kendiliğinden aktive olur
+              ve saniyeler içerisinde yangını söndürür. Elektriksel bir kaynağa,
+              kabloya veya boru bağlantısına gerek duymaz.
             </p>
           </div>
           <div className={styles.specificationsRight}>
@@ -70,11 +70,18 @@ export default function Home() {
               <h1>Fiziki Özellikleri</h1>
             </div>
             <p>
-              Küçük boyutludur (<b>100 x 50 x 4 mm</b>) Ağırlığı <b>26 ± 1</b>{" "}
-              gramdır <b>-30° +100° C</b> arasında saklanır Etkili söndürme
-              hacmi <b>0.1 m3</b> (<b>110 litre</b>) dür 1 sticker; yaklaşık{" "}
-              <b>50x50x50cm</b> boyutlarındaki bir kabin içinde çıkacak yangını
-              söndürebilir
+              Küçük boyutludur (<b>100 x 50 x 4 mm</b>)
+            </p>
+            <p>
+              Ağırlığı <b>26 ± 1</b> gramdır
+            </p>
+            <p>
+              <b>-30° +100° C</b> arasında saklanır{" "}
+            </p>
+            <p>
+              Etkili söndürme hacmi <b>0.1 m3</b> (<b>110 litre</b>) dür. 1
+              sticker; yaklaşık <b>50x50x50cm</b> boyutlarındaki bir kabin
+              içinde çıkacak yangını söndürebilir
             </p>
           </div>
         </section>
@@ -92,7 +99,12 @@ export default function Home() {
             ></path>
           </svg>
           <div className={styles.usageLeft}>
-            <Image priority className={styles.usageImage} src={usageImage} alt="usage" />
+            <Image
+              priority
+              className={styles.usageImage}
+              src={usageImage}
+              alt="usage"
+            />
           </div>
           <div className={styles.usageRight}>
             <h1>Nasıl Monte Edilir?</h1>
@@ -106,13 +118,21 @@ export default function Home() {
               sticker konmalıdır.
             </p>
           </div>
-          <svg className={styles.usageWavesBottom} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fbb02d" fillOpacity="1" d="M0,32L60,74.7C120,117,240,203,360,218.7C480,235,600,181,720,138.7C840,96,960,64,1080,48C1200,32,1320,32,1380,32L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+          <svg
+            className={styles.usageWavesBottom}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+          >
+            <path
+              fill="#fbb02d"
+              fillOpacity="1"
+              d="M0,32L60,74.7C120,117,240,203,360,218.7C480,235,600,181,720,138.7C840,96,960,64,1080,48C1200,32,1320,32,1380,32L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+            ></path>
+          </svg>
         </section>
-        <section className={styles.videoSection}>
-          Video Section
-        </section>
+        <section className={styles.videoSection}>Video Section</section>
         <section className={styles.formSection}>
-        <h1 id={styles.contactHeading}>Contact</h1>
+          <h1 id={styles.contactHeading}>Contact</h1>
           <form>
             <input type="text" />
             <input type="text" />
@@ -120,9 +140,7 @@ export default function Home() {
             <input type="submit" value="Send Message" />
           </form>
         </section>
-        <footer className={styles.footer}>
-          Footer Section
-        </footer>
+        <footer className={styles.footer}>Footer Section</footer>
       </main>
     </>
   );
