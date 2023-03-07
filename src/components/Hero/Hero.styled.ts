@@ -44,12 +44,21 @@ const HeroLeftContainer = styled.section`
   }
 `;
 
+const HeroBrand = styled.span`
+  font-weight: 600;
+  font-size: 1.3rem;
+  &:hover {
+    background-color: #effbd0;
+    transition: 500ms ease-in-out;
+  }
+`;
+
 const HeroRightContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 49%;
-  @media(max-width: 864px){
+  @media (max-width: 864px) {
     order: 0;
     width: 100%;
   }
@@ -77,7 +86,7 @@ const HeroImage = styled(Image)`
   width: 100%;
   height: auto;
   z-index: 2;
-  @media (max-width: 864px){
+  @media (max-width: 864px) {
     height: 20rem;
   }
 `;
@@ -88,4 +97,5 @@ export {
   HeroLeftContainer,
   HeroButton,
   HeroRightContainer,
+  HeroBrand
 };

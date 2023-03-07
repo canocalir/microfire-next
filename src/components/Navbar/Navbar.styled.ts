@@ -4,7 +4,7 @@ const NavbarContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem 0 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   background-color: #bde8c6d2;
   position: fixed;
   z-index: 3;

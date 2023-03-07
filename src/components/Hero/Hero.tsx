@@ -4,6 +4,7 @@ import {
   HeroLeftContainer,
   HeroRightContainer,
   HeroImage,
+  HeroBrand,
 } from "./Hero.styled";
 import heroImage from "../../assets/mainpage.png";
 import { FC } from "react";
@@ -16,7 +17,7 @@ const Hero: FC = () => {
         <HeroLeftContainer>
           <h1>Yangın çıkmadan MicroFire ile hemen önleminizi alın</h1>
           <p>
-            MicroFire Otomatik Yangın Söndürücü; alevi algıladığında hemen
+            <HeroBrand>MicroFire</HeroBrand> Otomatik Yangın Söndürücü; alevi algıladığında hemen
             aktive olarak yangını söndürür. Çevreye ve ekipmana zarar vermez.
           </p>
           <HeroButton>Get In Touch</HeroButton>
