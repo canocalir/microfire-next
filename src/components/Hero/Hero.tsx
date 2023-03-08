@@ -9,6 +9,7 @@ import {
 import heroImage from "../../assets/mainpage.png";
 import { FC } from "react";
 import { UpperWaves } from "../Waves/Waves.styled";
+import Link from "next/link";
 
 const Hero: FC = () => {
   return (
@@ -20,7 +21,7 @@ const Hero: FC = () => {
             <HeroBrand>MicroFire</HeroBrand> Otomatik Yangın Söndürücü; alevi algıladığında hemen
             aktive olarak yangını söndürür. Çevreye ve ekipmana zarar vermez.
           </p>
-          <HeroButton>Get In Touch</HeroButton>
+          <Link href="#usage" scroll={false}><HeroButton>Nasıl Kullanırım?</HeroButton></Link>
         </HeroLeftContainer>
         <HeroRightContainer>
           <HeroImage priority src={heroImage} alt="heroImage" />

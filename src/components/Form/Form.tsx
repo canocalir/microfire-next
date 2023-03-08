@@ -29,7 +29,7 @@ const Form = () => {
     reset();
   };
   return (
-    <FormMainContainer>
+    <FormMainContainer id="contact">
       <h1>Contact</h1>
       <form onSubmit={handleSubmit(sendEmail)}>
         <input

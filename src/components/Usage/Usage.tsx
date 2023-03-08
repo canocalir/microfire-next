@@ -9,7 +9,7 @@ import { BottomWaves, MiddleWaves } from "../Waves/Waves.styled";
 
 const Usage = () => {
   return (
-    <UsageMainContainer>
+    <UsageMainContainer id="usage">
       <MiddleWaves xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#bde8c6"

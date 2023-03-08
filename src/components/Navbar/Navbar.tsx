@@ -1,12 +1,18 @@
 import Image from "next/image";
 import logo from "../../assets/logo.png";
 import { NavbarButton, NavbarContainer } from "./Navbar.styled";
+import { FC } from "react";
+import Link from "next/link";
 
-const Navbar = () => {
+const Navbar: FC = () => {
   return (
     <NavbarContainer>
-      <Image width={110} src={logo} alt="logo" />
-      <NavbarButton>Contact</NavbarButton>
+      <Link href="/" scroll={false}>
+        <Image width={110} src={logo} alt="logo" />
+      </Link>
+      <Link href="#contact" scroll={false}>
+        <NavbarButton>Bize Ulaşın</NavbarButton>
+      </Link>
     </NavbarContainer>
   );
 };
