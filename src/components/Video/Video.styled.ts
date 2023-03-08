@@ -16,7 +16,7 @@ const VideoMainContainer = styled.section`
     font-weight: 900;
   }
   @media (min-width: 1400px) {
-    height: 30rem;
+    height: 100%;
   }
 `;
 
