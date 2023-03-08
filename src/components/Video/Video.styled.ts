@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const VideoMainContainer = styled.section`
   width: 100%;
-  height: 70%;
+  height: 70rem;
   background-color: #fbb02d;
   display: flex;
   justify-content: center;
@@ -11,9 +11,12 @@ const VideoMainContainer = styled.section`
   flex-direction: column;
   padding-bottom: 6rem;
 
-> h1 {
+  > h1 {
     font-size: 2.8rem;
     font-weight: 900;
+  }
+  @media (min-width: 1400px) {
+    height: 30rem;
   }
 `;
 
@@ -21,15 +24,16 @@ const VideoEmbeds = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   padding-top: 4rem;
   gap: 2rem;
-  height: 28rem;
-  iframe{
+
+  iframe {
     border-radius: 1rem;
     width: 40rem;
+    height: 20rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
-`
+`;
 
-export {VideoMainContainer, VideoEmbeds}
+export { VideoMainContainer, VideoEmbeds };
