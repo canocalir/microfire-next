@@ -8,8 +8,9 @@ import {
   SpecsRightContainer,
 } from "./Specs.styled";
 import fireraiderBanner from "../../assets/fireraiders.png";
+import { FC } from "react";
 
-const Specs = () => {
+const Specs: FC = () => {
   return (
     <>
       <FireRaiderBanner banner={fireraiderBanner}></FireRaiderBanner>

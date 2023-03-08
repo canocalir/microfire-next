@@ -6,8 +6,9 @@ import {
 } from "./Usage.styled";
 import usageImage from "../../assets/usage.png";
 import { BottomWaves, MiddleWaves } from "../Waves/Waves.styled";
+import { FC } from "react";
 
-const Usage = () => {
+const Usage: FC = () => {
   return (
     <UsageMainContainer id="usage">
       <MiddleWaves xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
