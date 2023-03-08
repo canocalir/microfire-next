@@ -26,8 +26,8 @@ const VideoEmbeds = styled.div`
   gap: 2rem;
   height: 28rem;
   iframe{
-    width: 35%;
     border-radius: 1rem;
+    width: 40rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 `
