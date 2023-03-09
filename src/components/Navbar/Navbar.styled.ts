@@ -11,6 +11,16 @@ const NavbarContainer = styled.header`
   width: 100%;
 `;
 
+const NavbarRightContainer = styled.div`
+  display: flex;
+  gap: 2rem;
+  >select{
+    border-radius: 1rem;
+    width: 4rem;
+    border: none;
+  }
+`
+
 const NavbarButton = styled.button`
   background-color: #222222;
   color: #ffffff;
@@ -29,4 +39,4 @@ const NavbarButton = styled.button`
 }
 `
 
-export {NavbarContainer, NavbarButton}
+export {NavbarContainer, NavbarButton, NavbarRightContainer}
