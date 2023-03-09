@@ -12,8 +12,9 @@ const VideoMainContainer = styled.section`
   padding-bottom: 6rem;
 
   > h1 {
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 900;
+    color: #b75742;
   }
   @media (min-width: 1400px) {
     height: 100%;

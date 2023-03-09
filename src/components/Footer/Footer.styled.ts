@@ -9,4 +9,7 @@ export const FooterContainer = styled.footer`
   width: 100%;
   flex-direction: column;
   gap: 0.5rem;
+  @media (max-width: 864px){
+    text-align: center;
+  }
 `;

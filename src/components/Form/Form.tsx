@@ -1,11 +1,13 @@
-import { FormMainContainer } from "./Form.styled";
+import { successToast } from "@/helpers/successToast";
+import { AlertContainer, FormMainContainer } from "./Form.styled";
 import emailjs from "@emailjs/browser";
 import { FC } from "react";
 import { useForm } from "react-hook-form";
+import { errorToast } from "@/helpers/errorToast";
 
 type Inputs = {
-  fullname: string;
-  mail: string;
+  user_name: string;
+  user_email: string;
   message: string;
 };
 
@@ -18,7 +20,7 @@ const Form: FC = () => {
   } = useForm<Inputs>();
   const sendEmail = (formData: any) => {
     emailjs
-      .sendForm(
+      .send(
         "service_3uhzi4a",
         "template_yrcghtt",
         formData,
@@ -26,40 +28,46 @@ const Form: FC = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          successToast("Mesajınız gönderilmiştir!")
         },
         (error) => {
-          console.log(error.text);
+          errorToast("Gönderim sırasında sorun oluştu!")
         }
       );
     reset();
   };
   return (
     <FormMainContainer id="contact">
-      <h1>Contact</h1>
+      <h1>Bize Ulaşın</h1>
       <form onSubmit={handleSubmit(sendEmail)}>
+        <AlertContainer>
         <input
-          placeholder="Enter your fullname"
-          {...register("fullname", { required: "Fullname is required" })}
-          aria-invalid={errors.fullname ? "true" : "false"}
+          placeholder="İsim - Soyisim giriniz"
+          {...register("user_name", { required: "Fullname is required" })}
+          aria-invalid={errors?.user_name ? "true" : "false"}
           name="user_name"
         />
-        {errors.fullname && <p role="alert">{errors.fullname?.message}</p>}
+        {errors.user_name && <p role="alert">{errors?.user_name?.message}</p>}
+        </AlertContainer>
+        <AlertContainer>
         <input
-          placeholder="Enter your email"
-          {...register("mail", { required: "Email Address is required" })}
-          aria-invalid={errors.mail ? "true" : "false"}
+          placeholder="Eposta adresinizi giriniz"
+          {...register("user_email", { required: "Email Address is required" })}
+          aria-invalid={errors?.user_email ? "true" : "false"}
           name="user_email"
         />
-        {errors.mail && <p role="alert">{errors.mail?.message}</p>}
+        {errors.user_email && <p role="alert">{errors?.user_email?.message}</p>}
+        </AlertContainer>
+        <AlertContainer>
         <textarea
-          placeholder="Enter your message"
+          placeholder="Mesajınızı giriniz"
           {...register("message", { required: "A message is required" })}
-          aria-invalid={errors.message ? "true" : "false"}
+          aria-invalid={errors?.message ? "true" : "false"}
           name="message"
         />
         {errors.message && <p role="alert">{errors.message?.message}</p>}
-        <input type="submit" value="Send" />
+        </AlertContainer>
+        <input type="submit" value="Mesaj Gönder" />
       </form>
     </FormMainContainer>
   );

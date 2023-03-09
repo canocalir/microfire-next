@@ -13,3 +13,7 @@ html{
 body{
   font-family: 'Montserrat', sans-serif;
 }
+
+.grecaptcha-badge {
+  z-index: 999;
+}

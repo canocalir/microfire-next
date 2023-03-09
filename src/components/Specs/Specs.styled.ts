@@ -39,16 +39,24 @@ const SpecsLeftContainer = styled.div`
     font-weight: 600;
   }
   > p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
+    line-height: 2rem;
+  }
+  @media(max-width: 864px){
+    flex: 0.8;
   }
 `;
 
 const SpecsRightContainer = styled.div`
   flex: 0.3;
   > p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
+    line-height: 2rem;
+  }
+  @media(max-width: 864px){
+    flex: 0.8;
   }
 `;
 
@@ -59,7 +67,7 @@ const HeaderWithIcon = styled.div`
   padding-bottom: 1rem;
   color: #b75742;
   > h1 {
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 900;
   }
 `;
