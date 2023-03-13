@@ -7,8 +7,11 @@ import Video from "@/components/Video/Video";
 import Usage from "@/components/Usage/Usage";
 import Form from "@/components/Form/Form";
 import Footer from "@/components/Footer/Footer";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function Home() {
+  const { t } = useTranslation();
   return (
     <>
       <Head>
@@ -28,4 +31,13 @@ export default function Home() {
       </MainContainer>
     </>
   );
+}
+
+
+export async function getStaticProps({ locale = "default" }:any) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
 }

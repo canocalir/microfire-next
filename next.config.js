@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
+const { i18n } = require("./next-i18next.config");
+
 const nextConfig = {
   reactStrictMode: true,
   distDir: 'build',
+  swcMinify: true,
+  i18n,
 }
 
-module.exports = nextConfig
 module.exports = {
   assetPrefix: '.',
   images: {
@@ -19,3 +22,5 @@ module.exports = {
     }
   },
 }
+
+module.exports = nextConfig
