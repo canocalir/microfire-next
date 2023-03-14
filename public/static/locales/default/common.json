@@ -1,5 +1,8 @@
 {
   "navbar": {
     "navbarButtonText": "Contact Us"
+  },
+  "main":{
+    "pageTitle": "Microfire - Automatic Fire Extinguisher"
   }
 }

@@ -12,6 +12,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function Home() {
   const { t } = useTranslation();
+
   return (
     <>
       <Head>

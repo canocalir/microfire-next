@@ -4,18 +4,18 @@ import { appWithTranslation } from "next-i18next";
 import type { AppProps } from "next/app";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import { ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 function App({ Component, pageProps }: AppProps) {
   return (
     <GoogleReCaptchaProvider
-    reCaptchaKey="6LeX4uUkAAAAAKQH8Lxt_HFI8kAbyn2PLGTk5jsL"
-    scriptProps={{
-      async: false,
-      defer: false,
-      appendTo: "head",
-      nonce: undefined,
-    }}
+      reCaptchaKey="6LeX4uUkAAAAAKQH8Lxt_HFI8kAbyn2PLGTk5jsL"
+      scriptProps={{
+        async: false,
+        defer: false,
+        appendTo: "head",
+        nonce: undefined,
+      }}
     >
       <Component {...pageProps} />
       <ToastContainer
@@ -34,4 +34,4 @@ function App({ Component, pageProps }: AppProps) {
   );
 }
 
-export default appWithTranslation(App)
+export default appWithTranslation(App);

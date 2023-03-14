@@ -9,11 +9,12 @@ const NavbarContainer = styled.header`
   position: fixed;
   z-index: 3;
   width: 100%;
+  gap: 0.5rem;
 `;
 
 const NavbarRightContainer = styled.div`
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   >select{
     border-radius: 1rem;
     width: 4rem;

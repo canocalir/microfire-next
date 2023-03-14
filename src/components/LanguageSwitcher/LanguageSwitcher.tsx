@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import {GrLanguage} from "react-icons/gr"
+import { LanguageSwitcherContainer } from "./LanguageSwitcher.styled";
 
 export default function LanguageSwitcher() {
   const router = useRouter();
@@ -11,17 +13,18 @@ export default function LanguageSwitcher() {
   );
 
   return (
-    <span>
+    <LanguageSwitcherContainer>
+      <GrLanguage/>
       {otherLocales?.map((locale) => {
         const { pathname, query, asPath } = router;
         return (
           <span key={"locale-" + locale}>
             <Link href={{ pathname, query }} as={asPath} locale={locale}>
-                {locale === "en" ? "English" : locale === "tr" ? "Türkçe" : null}
+                <p>{locale === "en" ? "EN" : locale === "tr" ? "TR" : null}</p>
             </Link>
           </span>
         );
       })}
-    </span>
+    </LanguageSwitcherContainer>
   );
 }

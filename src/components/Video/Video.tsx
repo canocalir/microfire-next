@@ -1,11 +1,13 @@
 import { FC } from "react";
 import { VideoEmbeds, VideoMainContainer } from "./Video.styled";
+import { useTranslation } from "next-i18next";
 
 const Video: FC = () => {
+  const {t} = useTranslation("")
   return (
     <>
       <VideoMainContainer>
-        <h1>Nasıl Kullanılır?</h1>
+        <h1>{t("main.videoTitle")}</h1>
         <VideoEmbeds>
         <iframe
           src="https://www.youtube.com/embed/s_CWHiZE2Hw?controls=0"

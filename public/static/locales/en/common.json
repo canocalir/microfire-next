@@ -1,6 +1,22 @@
 {
     "navbar": {
       "navbarButtonText": "Contact Us"
+    },
+    "main":{
+      "pageTitle": "Microfire - Automatic Fire Extinguisher",
+      "heroTitle": "Take immediate action with MicroFire before a fire breaks out",
+      "heroText": "Automatic Fire Extinguisher; When it detects the flame, it activates immediately and extinguishes the fire. It does not harm the environment and equipment.",
+      "heroButton": "How Do I Use?",
+      "usageTitle": "How is it Mounted?",
+      "usageText": "With its rough surface facing the direction of possible fire risk, the protector of the adhesive tape on the back is removed and adhered parallel to the ground. In vehicles, it is glued to the bodywork, over the battery caps and fuel filter. In electrical panels and electrical clocks, it is adhered to the ceiling on the inner surface of the panel. Separate stickers should be placed on each independent section.",
+      "videoTitle": "How do I use?",
+      "formTitle": "Contact Us",
+      "formNamePlaceholder": "Enter your fullname",
+      "formEmailPlaceholder": "Enter your email",
+      "formMessagePlaceholder": "Enter your message",
+      "formSubmitButton": "Send Message",
+      "footerAddress": "Altıntepe mh. İstasyon Yolu sk. No 3/1 Maltepe Istanbul, 34840 Turkey",
+      "footerCopyrightText": "© 2023 All rights reserved. Made by GRC Technology." 
     }
   }
   

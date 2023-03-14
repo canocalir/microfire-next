@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import { FC } from "react";
 import { useForm } from "react-hook-form";
 import { errorToast } from "@/helpers/errorToast";
+import { useTranslation } from "next-i18next";
 
 type Inputs = {
   user_name: string;
@@ -12,6 +13,7 @@ type Inputs = {
 };
 
 const Form: FC = () => {
+  const {t} = useTranslation("")
   const {
     register,
     handleSubmit,
@@ -36,13 +38,18 @@ const Form: FC = () => {
       );
     reset();
   };
+  const formNamePlaceHolder:string = t("main.formNamePlaceholder")
+  const formEmailPlaceHolder:string = t("main.formEmailPlaceholder")
+  const formMessagePlaceholder:string = t("main.formMessagePlaceholder")
+  const formSubmitButtonText:string = t("main.formSubmitButton")
+
   return (
     <FormMainContainer id="contact">
-      <h1>Bize Ulaşın</h1>
+      <h1>{t("main.formTitle")}</h1>
       <form onSubmit={handleSubmit(sendEmail)}>
         <AlertContainer>
         <input
-          placeholder="İsim - Soyisim giriniz"
+          placeholder={formNamePlaceHolder}
           {...register("user_name", { required: "Fullname is required" })}
           aria-invalid={errors?.user_name ? "true" : "false"}
           name="user_name"
@@ -51,7 +58,7 @@ const Form: FC = () => {
         </AlertContainer>
         <AlertContainer>
         <input
-          placeholder="Eposta adresinizi giriniz"
+          placeholder={formEmailPlaceHolder}
           {...register("user_email", { required: "Email Address is required" })}
           aria-invalid={errors?.user_email ? "true" : "false"}
           name="user_email"
@@ -60,14 +67,14 @@ const Form: FC = () => {
         </AlertContainer>
         <AlertContainer>
         <textarea
-          placeholder="Mesajınızı giriniz"
+          placeholder={formMessagePlaceholder}
           {...register("message", { required: "A message is required" })}
           aria-invalid={errors?.message ? "true" : "false"}
           name="message"
         />
         {errors.message && <p role="alert">{errors.message?.message}</p>}
         </AlertContainer>
-        <input type="submit" value="Mesaj Gönder" />
+        <input type="submit" value={formSubmitButtonText} />
       </form>
     </FormMainContainer>
   );

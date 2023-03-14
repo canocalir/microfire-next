@@ -7,8 +7,11 @@ import {
 import usageImage from "../../assets/usage.png";
 import { BottomWaves, MiddleWaves } from "../Waves/Waves.styled";
 import { FC } from "react";
+import { useTranslation } from "next-i18next";
+
 
 const Usage: FC = () => {
+  const {t} = useTranslation("")
   return (
     <UsageMainContainer id="usage">
       <MiddleWaves xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -24,12 +27,7 @@ const Usage: FC = () => {
       <UsageRightContainer>
         <h1>Nasıl Monte Edilir?</h1>
         <p>
-          Pürüzlü yüzeyi, olası yangın riskinin olduğu yöne bakacak şekilde,
-          arkasındaki yapışkan bandın koruyucusu sökülür ve yere paralel şekilde
-          yapıştırılır. Araçlarda, akü başlıkları ve yakıt filtresinin üstüne
-          gelecek şekilde kaportaya yapıştırılır. Elektrik panolarında ve
-          elektrik saatlerinde, panonun iç yüzeyinde tavana gelecek şekilde
-          yapıştırılır. Her bağımsız bölüme ayrı sticker konmalıdır.
+          {t("main.usageText")}
         </p>
       </UsageRightContainer>
       <BottomWaves xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

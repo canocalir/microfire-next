@@ -10,18 +10,21 @@ import heroImage from "../../assets/mainpage.png";
 import { FC } from "react";
 import { UpperWaves } from "../Waves/Waves.styled";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 const Hero: FC = () => {
+  const { t } = useTranslation("");
   return (
     <>
       <HeroMainContainer>
         <HeroLeftContainer>
-          <h1>Yangın çıkmadan MicroFire ile hemen önleminizi alın</h1>
+          <h1>{t("main.heroTitle")}</h1>
           <p>
-            <HeroBrand>MicroFire</HeroBrand> Otomatik Yangın Söndürücü; alevi algıladığında hemen
-            aktive olarak yangını söndürür. Çevreye ve ekipmana zarar vermez.
+            <HeroBrand>MicroFire</HeroBrand> {t("main.heroText")}
           </p>
-          <Link href="#usage" scroll={false}><HeroButton>Nasıl Kullanırım?</HeroButton></Link>
+          <Link href="#usage" scroll={false}>
+            <HeroButton>{t("main.heroButton")}</HeroButton>
+          </Link>
         </HeroLeftContainer>
         <HeroRightContainer>
           <HeroImage priority src={heroImage} alt="heroImage" />

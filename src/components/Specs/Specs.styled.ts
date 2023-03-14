@@ -26,7 +26,7 @@ const SpecsMainContainer = styled.section`
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  padding: 4rem 0 3rem 0;
+  padding: 4rem 2rem 3rem 2rem;
   @media (max-width: 864px){
     gap: 2rem;
   }

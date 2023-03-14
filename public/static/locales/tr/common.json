@@ -1,6 +1,22 @@
 {
     "navbar": {
       "navbarButtonText": "Bize Ulaşın"
+    },
+    "main":{
+      "pageTitle": "Microfire - Otomatik Yangın Söndürücü",
+      "heroTitle": "Yangın çıkmadan MicroFire ile hemen önleminizi alın",
+      "heroText": "Otomatik Yangın Söndürücü; alevi algıladığında hemen aktive olarak yangını söndürür. Çevreye ve ekipmana zarar vermez.",
+      "heroButton": "Nasıl Kullanırım?",
+      "usageTitle": "Nasıl Monte Edilir?",
+      "usageText": "Pürüzlü yüzeyi, olası yangın riskinin olduğu yöne bakacak şekilde, arkasındaki yapışkan bandın koruyucusu sökülür ve yere paralel şekilde yapıştırılır. Araçlarda, akü başlıkları ve yakıt filtresinin üstüne gelecek şekilde kaportaya yapıştırılır. Elektrik panolarında ve elektrik saatlerinde, panonun iç yüzeyinde tavana gelecek şekilde yapıştırılır. Her bağımsız bölüme ayrı sticker konmalıdır.",
+      "videoTitle": "Nasıl Kullanılır?",
+      "formTitle": "Bize Ulaşın",
+      "formNamePlaceholder": "İsim - Soyisim giriniz",
+      "formEmailPlaceholder": "Eposta adresinizi giriniz",
+      "formMessagePlaceholder": "Mesajınızı giriniz",
+      "formSubmitButton": "Mesaj Gönder",
+      "footerAddress": "Altıntepe mh. İstasyon Yolu sk. No 3/1 Maltepe İstanbul, 34840 Türkiye",
+      "footerCopyrightText": "© 2023 Tüm hakları sakladır. GRC Teknoloji tarafından yapılmıştır."
     }
   }
   
