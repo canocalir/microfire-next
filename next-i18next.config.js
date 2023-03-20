@@ -5,6 +5,6 @@ module.exports = {
     locales: ["default", "en", "tr"],
     defaultLocale: "default",
     localeDetection: true,
-    localePath: path.resolve("./public/static/locales"),
   },
+  localePath: path.resolve("./public/static/locales")
 };
