@@ -2,7 +2,7 @@ import Image from "next/image";
 import styled from "styled-components";
 
 const UsageMainContainer = styled.section`
-  background-color: #eeeeee;
+  background-color: #ffffff;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
