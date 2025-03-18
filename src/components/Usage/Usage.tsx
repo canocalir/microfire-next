@@ -4,14 +4,17 @@ import {
   UsageMainContainer,
   UsageRightContainer,
 } from "./Usage.styled";
-import usageImage from "../../assets/usage.png";
+
+import usageImageEn from "../../assets/usage.en.jpeg";
+import usageImageTr from "../../assets/usage-tr.png";
+
 import { BottomWaves, MiddleWaves } from "../Waves/Waves.styled";
 import { FC } from "react";
 import { useTranslation } from "next-i18next";
 
 
 const Usage: FC = () => {
-  const {t} = useTranslation("")
+  const {t, i18n} = useTranslation();
   return (
     <UsageMainContainer id="usage">
       <MiddleWaves xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -22,10 +25,12 @@ const Usage: FC = () => {
         ></path>
       </MiddleWaves>
       <UsageLeftContainer>
-        <UsageImage priority src={usageImage} alt="usage" />
+        <UsageImage priority src={
+          i18n.language === 'en' ? usageImageEn : usageImageTr
+        } alt="usage" />
       </UsageLeftContainer>
       <UsageRightContainer>
-        <h1>Nasıl Monte Edilir?</h1>
+        <h1>{t('usage.heading1')}</h1>
         <p>
           {t("main.usageText")}
         </p>

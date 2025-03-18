@@ -8,9 +8,31 @@ import {
   SpecsRightContainer,
 } from "./Specs.styled";
 import fireraiderBanner from "../../assets/fireraiders.png";
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
-const Specs: FC = () => {
+const Specs = () => {
+  const { t } = useTranslation();
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null;
+  }
+
+  const parseBoldText = (text: string) => {
+    const parts = text.split(/(\*\*.*?\*\*)/g);
+    return parts.map((part, index) => {
+      if (part.startsWith('**') && part.endsWith('**')) {
+        return <strong key={index}>{part.slice(2, -2)}</strong>;
+      }
+      return part;
+    });
+  };
+
   return (
     <>
       <FireRaiderBanner banner={fireraiderBanner}></FireRaiderBanner>
@@ -18,26 +40,19 @@ const Specs: FC = () => {
         <SpecsLeftContainer>
           <HeaderWithIcon>
             <HeaderIconFire />
-            <h1>Microfire Sticker</h1>
+            <h1>{t('specs.heading1')}</h1>
           </HeaderWithIcon>
           <p>
-            Kolayca monte edilebilen, alevin teması ile kendiliğinden aktive
-            olan ve saniyeler içerisinde yangını söndürebilen otomatik bir
-            yangın söndürücüdür. Elektrik kaynağına, kablo ve boru bağlantısına
-            gerek duymaz.
+            {parseBoldText(t('specs.text1'))}
           </p>
         </SpecsLeftContainer>
         <SpecsRightContainer>
           <HeaderWithIcon>
             <HeaderIconList />
-            <h1>Fiziki Özellikleri</h1>
+            <h1>{t('specs.heading2')}</h1>
           </HeaderWithIcon>
           <p>
-            Küçük boyutludur (<b>100 x 50 x 4 mm</b>) Ağırlığı <b>26 ± 1</b>{" "}
-            gramdır <b>-30° +100° C</b> arasında saklanır Etkili söndürme hacmi 
-            <b>0.1 m3</b> (<b>110 litre</b>) dür 1 sticker; yaklaşık{" "}
-            <b>50x50x50cm</b> boyutlarındaki bir kabin içinde çıkacak yangını
-            söndürebilir
+            {parseBoldText(t('specs.text2'))}
           </p>
         </SpecsRightContainer>
       </SpecsMainContainer>

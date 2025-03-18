@@ -16,7 +16,20 @@
       "formMessagePlaceholder": "Mesajınızı giriniz",
       "formSubmitButton": "Mesaj Gönder",
       "footerAddress": "Altıntepe mh. İstasyon Yolu sk. No 3/1 Maltepe İstanbul, 34840 Türkiye",
-      "footerCopyrightText": "© 2023 Tüm hakları sakladır. GRC Teknoloji tarafından yapılmıştır."
+      "footerCopyrightText": "© 2025 Tüm hakları sakladır. GRC Teknoloji tarafından yapılmıştır."
+    },
+    "specs": {
+      "text1": "Kolayca monte edilebilen, alevin teması ile kendiliğinden aktive olan ve saniyeler içerisinde yangını söndürebilen otomatik bir yangın söndürücüdür. Elektrik kaynağına, kablo ve boru bağlantısına gerek duymaz.",
+      "text2": "Küçük boyutludur (100 x 50 x 4 mm) Ağırlığı 26 ± 1 gramdır -30° +100° C arasında saklanır Etkili söndürme hacmi 0.1 m³ (110 litre) dür 1 sticker; yaklaşık 50x50x50 cm boyutlarındaki bir kabin içinde çıkacak yangını söndürebilir.",
+      "heading1": "Microfire Sticker",
+      "heading2": "Fiziki Özellikleri"
+    },
+    "usage": {
+      "heading1": "Nasıl Monte Edilir?"
+    },
+    "root": {
+      "title": "Microfire - Benzersiz Yangın Söndürücüler",
+      "desc": "Çevre ve canlı dostu yangın söndürücü, Sıvı (B sınıfı) ve metal (D sınıfı) yangın söndürücüler, lityum batarya yangınları, otomatik Yangın Söndürücüler, MicroFire yangın söndürücüler"
     }
   }
   

@@ -15,8 +15,21 @@
       "formEmailPlaceholder": "Enter your email",
       "formMessagePlaceholder": "Enter your message",
       "formSubmitButton": "Send Message",
-      "footerAddress": "Altıntepe mh. İstasyon Yolu sk. No 3/1 Maltepe Istanbul, 34840 Turkey",
-      "footerCopyrightText": "© 2023 All rights reserved. Made by GRC Technology." 
+      "footerAddress": "Altıntepe mh. İstasyon Yolu sk. No 3/1 Maltepe Istanbul, 34840 Türkiye",
+      "footerCopyrightText": "© 2025 All rights reserved. Made by GRCTek" 
+    },
+    "specs": {
+      "text1": "It is an automatic fire extinguisher that can be easily mounted, activates itself upon contact with flames, and extinguishes the fire within seconds. It does not require an electrical source, cable, or pipe connection.",
+      "text2": "It is compact in size (**100 x 50 x 4 mm**) and weighs **26 ± 1 grams**. It can be stored between **-30°C and +100°C**. The effective extinguishing volume is **0.1 m³ (110 liters)**. One sticker can extinguish a fire inside a cabinet of approximately **50 x 50 x 50 cm** in size.",
+      "heading1": "Microfire Sticker",
+      "heading2": "Physical Properties"
+    },
+    "usage": {
+      "heading1": "How is it Mounted?"
+    },
+    "root": {
+      "title": "Microfire - Unique Fire Extinguishers",
+      "desc": "Environmental friendly extinguisher, Liquid (Class B) and metal (Class D) fire extinguishers, lithium battery fires, automatic Fire Extinguishers, MicroFire fire extinguishers"
     }
   }
   
