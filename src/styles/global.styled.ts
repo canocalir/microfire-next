@@ -6,7 +6,7 @@ const MainContainer = styled.main`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #bde8c6;
+  background-color: #f5f5f5ff;
 `;
 
 export {MainContainer}
