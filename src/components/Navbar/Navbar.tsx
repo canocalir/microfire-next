@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo-mfx.png";
 import { NavbarButton, NavbarContainer, NavbarRightContainer } from "./Navbar.styled";
 import { FC } from "react";
 import Link from "next/link";
