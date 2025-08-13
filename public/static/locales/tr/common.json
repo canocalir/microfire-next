@@ -11,6 +11,8 @@
       "usageText": "Pürüzlü yüzeyi, olası yangın riskinin olduğu yöne bakacak şekilde, arkasındaki yapışkan bandın koruyucusu sökülür ve yere paralel şekilde yapıştırılır. Araçlarda, akü başlıkları ve yakıt filtresinin üstüne gelecek şekilde kaportaya yapıştırılır. Elektrik panolarında ve elektrik saatlerinde, panonun iç yüzeyinde tavana gelecek şekilde yapıştırılır. Her bağımsız bölüme ayrı sticker konmalıdır.",
       "videoTitle": "Nasıl Kullanılır?",
       "formTitle": "Bize Ulaşın",
+      "formSuccessMessage": "Mesajınız gönderilmiştir!",
+      "formErrorMessage": "Gönderim sırasında sorun oluştu!",
       "formNamePlaceholder": "İsim - Soyisim giriniz",
       "formEmailPlaceholder": "Eposta adresinizi giriniz",
       "formMessagePlaceholder": "Mesajınızı giriniz",

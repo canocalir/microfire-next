@@ -11,6 +11,8 @@
       "usageText": "With its rough surface facing the direction of possible fire risk, the protector of the adhesive tape on the back is removed and adhered parallel to the ground. In vehicles, it is glued to the bodywork, over the battery caps and fuel filter. In electrical panels and electrical clocks, it is adhered to the ceiling on the inner surface of the panel. Separate stickers should be placed on each independent section.",
       "videoTitle": "How do I use?",
       "formTitle": "Contact Us",
+      "formSuccessMessage": "Your message has been sent!",
+      "formErrorMessage": "There was an issue during submission!",
       "formNamePlaceholder": "Enter your fullname",
       "formEmailPlaceholder": "Enter your email",
       "formMessagePlaceholder": "Enter your message",

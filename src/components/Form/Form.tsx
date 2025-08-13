@@ -30,10 +30,10 @@ const Form: FC = () => {
       )
       .then(
         (result) => {
-          successToast("Mesajınız gönderilmiştir!")
+          successToast(t("main.formSuccessMessage"));
         },
         (error) => {
-          errorToast("Gönderim sırasında sorun oluştu!")
+          errorToast(t("main.formErrorMessage"));
         }
       );
     reset();
