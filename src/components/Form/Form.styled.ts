@@ -15,7 +15,7 @@ const FormMainContainer = styled.section`
   > h1 {
     font-size: 2rem;
     font-weight: 900;
-    color: #b75742;
+    color: #ff0e0e;
   }
   form {
     display: flex;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 const VideoMainContainer = styled.section`
   width: 100%;
   height: 70rem;
-  background-color: #fbb02d;
+  background-color: #efe0d5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@ const VideoMainContainer = styled.section`
   > h1 {
     font-size: 2rem;
     font-weight: 900;
-    color: #b75742;
+    color: #ff0e0e;
   }
   @media (min-width: 1400px) {
     height: 100%;

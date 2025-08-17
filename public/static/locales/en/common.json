@@ -4,8 +4,8 @@
     },
     "main":{
       "pageTitle": "MicroFireX - Automatic Fire Extinguisher",
-      "heroTitle": "Take immediate action with MicroFireX before a fire breaks out",
-      "heroText": "Automatic Fire Extinguisher; When it detects the flame, it activates immediately and extinguishes the fire. It does not harm the environment and equipment.",
+      "heroTitle": "Compact Size, Maximum Protection",
+      "heroText": "Take immediate action with it before a fire breaks out",
       "heroButton": "How Do I Use?",
       "usageTitle": "How is it Mounted?",
       "usageText": "With its rough surface facing the direction of possible fire risk, the protector of the adhesive tape on the back is removed and adhered parallel to the ground. In vehicles, it is glued to the bodywork, over the battery caps and fuel filter. In electrical panels and electrical clocks, it is adhered to the ceiling on the inner surface of the panel. Separate stickers should be placed on each independent section.",
@@ -21,16 +21,42 @@
       "footerCopyrightText": "© 2025 All rights reserved. Made by GRCTek" 
     },
     "specs": {
-      "text1": "It is an automatic fire extinguisher that can be easily mounted, activates itself upon contact with flames, and extinguishes the fire within seconds. It does not require an electrical source, cable, or pipe connection.",
-      "text2": "It is compact in size (**100 x 50 x 4 mm**) and weighs **26 ± 1 grams**. It can be stored between **-30°C and +100°C**. The effective extinguishing volume is **0.1 m³ (110 liters)**. One sticker can extinguish a fire inside a cabinet of approximately **50 x 50 x 50 cm** in size.",
-      "heading1": "Microfire Sticker",
-      "heading2": "Physical Properties"
+      "text1": "The MicroFireX is a compact, palm-sized, high-performance, Pyrotechnic Fire Fighting Device (Automatic fire extinguishing system) with a durable metal casing designed for both professional and home users.\n\nThe device has been tested and certified accordance with the EU Directive 2013/29/EU on Pyrotechnic Articles.",
+      "text2": "It is compact in size (**66 x 27 x 20 mm**) and weighs **50 ± 1 grams**.\n\nThe effective extinguishing volume is **0.3 m³ (300 liters)**. One sticker can extinguish a fire inside a cabinet of approximately **60 x 60 x 85 cm** in size.\nDesign Density of MicroFirex is 60g/m³.\nThe device is designed to be used in enclosed spaces, such as electrical panels, vehicles, and other areas where fire risk is present.",
+      "panel1": "Panel A",
+      "panel2": "Panel B",
+      "panel3": "Panel C",
+      "panel4": "Panel D",
+      "panel5": "Panel E",
+      "panel6": "Panel F",
+      "panel7": "Panel G",
+      "panel8": "Panel H",
+      "panelNote": "Note: Capacity text is customizable.",
+      "heading1": "MicroFireX",
+      "heading2": "Physical Properties",
+      "card1": {
+        "title": "Automatic Activation",
+        "content": "Automatically activates at 170°C, no electrical connection required"
+      },
+      "card2": {
+        "title": "Rapid Response",
+        "content": "Extinguishes fire in ≤ 5 seconds in volumes of (**0.3 m³ (300 liters)**), nano-sized aerosol technology."
+      },
+      "card3": {
+        "title": "Environmentally Friendly",
+        "content": "MicroFireX does not harm the environment or equipment."
+      },
+      "card4": {
+        "title": "Easy Installation",
+        "content": "Plug-and-play installation with adhesive tape."
+      },
+      "button": "Get Detailed Information"
     },
     "usage": {
       "heading1": "How is it Mounted?"
     },
     "root": {
-      "title": "Microfire - Unique Fire Extinguishers",
+      "title": "MicroFireX - Unique Fire Extinguishers",
       "desc": "Environmental friendly extinguisher, Liquid (Class B) and metal (Class D) fire extinguishers, lithium battery fires, automatic Fire Extinguishers, MicroFire fire extinguishers"
     }
   }

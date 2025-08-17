@@ -31,7 +31,7 @@ const UsageRightContainer = styled.div`
   > h1 {
     font-size: 2rem;
     font-weight: 900;
-    color: #b75742;
+    color: #ff0e0e;
   }
   @media(max-width: 864px){
     padding: 0 2rem 5rem 2rem;

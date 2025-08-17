@@ -23,8 +23,34 @@
     "specs": {
       "text1": "Kolayca monte edilebilen, alevin teması ile kendiliğinden aktive olan ve saniyeler içerisinde yangını söndürebilen otomatik bir yangın söndürücüdür. Elektrik kaynağına, kablo ve boru bağlantısına gerek duymaz.",
       "text2": "Küçük boyutludur (100 x 50 x 4 mm) Ağırlığı 26 ± 1 gramdır -30° +100° C arasında saklanır Etkili söndürme hacmi 0.1 m³ (110 litre) dür 1 sticker; yaklaşık 50x50x50 cm boyutlarındaki bir kabin içinde çıkacak yangını söndürebilir.",
-      "heading1": "Microfire Sticker",
-      "heading2": "Fiziki Özellikleri"
+      "heading1": "MicroFireX Sticker",
+      "heading2": "Fiziki Özellikleri",
+      "panel1": "Panel A",
+      "panel2": "Panel B",
+      "panel3": "Panel C",
+      "panel4": "Panel D",
+      "panel5": "Panel E",
+      "panel6": "Panel F",
+      "panel7": "Panel G",
+      "panel8": "Panel H",
+      "panelNote": "Not: Kapasite metni özelleştirilebilir.",
+      "card1": {
+        "title": "Kolay Montaj",
+        "content": "MicroFireX, pürüzlü yüzeyi sayesinde kolayca monte edilebilir."
+      },
+      "card2": {
+        "title": "Hızlı Aktivasyon",
+        "content": "Alevi algıladığında saniyeler içinde aktive olur ve yangını söndürür."
+      },
+      "card3": {
+        "title": "Çevre Dostu",
+        "content": "MicroFireX, çevreye ve ekipmana zarar vermez."
+      },
+      "card4": {
+        "title": "Geniş Etki Alanı",
+        "content": "0.1 m³ (110 litre) hacmindeki yangınları etkili bir şekilde söndürebilir."
+      },
+      "button": "Detaylı Bilgi Al"
     },
     "usage": {
       "heading1": "Nasıl Monte Edilir?"

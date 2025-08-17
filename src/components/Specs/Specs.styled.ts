@@ -11,7 +11,7 @@ const FireRaiderBanner = styled.div<BannerImageProp>`
   z-index: 1;
   height: 20rem;
   width: 100%;
-  background-color: #fbb02d !important;
+  background-color: #efe0d5 !important;
   background: url(${props => props.banner.src});
   background-size: contain;
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@ const SpecsMainContainer = styled.section`
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   padding: 4rem 2rem 3rem 2rem;
   @media (max-width: 864px){
     gap: 2rem;
@@ -62,10 +62,11 @@ const SpecsRightContainer = styled.div`
 
 const HeaderWithIcon = styled.div`
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
-  padding-bottom: 1rem;
-  color: #b75742;
+  gap: 0.5rem;
+  color: #ff0e0e;
+  margin-bottom: 1rem;
   > h1 {
     font-size: 2rem;
     font-weight: 900;
@@ -73,11 +74,11 @@ const HeaderWithIcon = styled.div`
 `;
 
 const HeaderIconList = styled(FaThList)`
-  font-size: 2.7rem;
+  font-size: 2.1rem;
 `;
 
 const HeaderIconFire = styled(AiFillFire)`
-  font-size: 2.7rem;
+  font-size: 2.1rem;
 `;
 
 export {
