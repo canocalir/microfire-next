@@ -22,9 +22,9 @@ const HeroLeftContainer = styled.section`
   gap: 1rem;
   z-index: 2;
   > h1 {
-    font-size: 3.5rem;
+    font-size: 3.5vw;
     font-weight: 900;
-    color: #b75742;
+    color: #ff0e0e;
   }
   > p {
     font-size: 1.3rem;
@@ -65,17 +65,17 @@ const HeroRightContainer = styled.section`
 `;
 
 const HeroButton = styled.button`
-  background-color: #b75742;
+  background-color: #ff0e0e;
   color: #ffffff;
   font-weight: 600;
   border-radius: 2rem;
   width: 15rem;
   height: 4rem;
-  font-size: 1.5rem;
-  border: 4px solid #b75742;
+  font-size: 1.2rem;
+  border: 4px solid #ff0e0e;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   &:hover {
-    background-color: #88321f;
+    background-color: #ff0e0e ;
     cursor: pointer;
     transition: 300ms ease-in-out;
   }

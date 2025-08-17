@@ -1,0 +1,65 @@
+/* ListsCard.module.scss */
+
+.cardWrapper {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.iconCheck {
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  margin-top: 0.2rem;
+  color: #22c55e; /* Tailwind green-500 */
+}
+
+.text {
+  font-size: 1.125rem; /* ~text-lg */
+  line-height: 1.5;
+  color: #e5e7eb; /* Tailwind gray-200 */
+}
+
+.noteBox {
+  margin-top: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(11, 18, 36, 0.7);
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.noteContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.iconAlert {
+  font-size: 1.25rem;
+  margin-top: 0.2rem;
+  color: #22c55e; /* Same green as check */
+}
+
+.noteText {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #c7d2fe; /* Tailwind indigo-200 */
+}
